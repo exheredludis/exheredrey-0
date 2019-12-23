@@ -105,7 +105,7 @@ die() {
     ping) printf "$general_die_output %s\\n" "Killed by ping\n" ; exit 1 ;;
 		# In case error code is not provided
 		fixme)
-			printf "FIXME: %s\\n" "$message"
+			printf 'FIXME: %s\n' "$message"
 			exit 1 ;;
 		*)
 			printf 'ERROR: %s\n' "die without error code has been provided"
